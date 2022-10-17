@@ -11,7 +11,7 @@ services:
       - POSTGRES_PASSWORD=$DB_PASS
       - POSTGRES_USER=$DB_USER
     ports:
-      - '5432:5432'
+      - '15432:5432'
 
   backend:
     build: .
