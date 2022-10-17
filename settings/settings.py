@@ -28,6 +28,7 @@ INSTALLED_APPS = [
 
     # my_apps
     'object_vps',
+    'drf_yasg',
 
     # 3rd party
     'rest_framework',
