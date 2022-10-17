@@ -15,7 +15,7 @@ class VPS(models.Model):
     cpu = models.PositiveIntegerField(verbose_name='Количество ядер')
     ram = models.CharField(max_length=20, verbose_name='Объем RAM')
     hdd = models.CharField(max_length=20, verbose_name='Объем HDD')
-    status = models.PositiveIntegerField(choices=STATUS_LIST, default='stopped', verbose_name='Статус сервера')
+    status = models.CharField(max_length=20, choices=STATUS_LIST, default='stopped', verbose_name='Статус сервера')
 
     def __str__(self):
         return f'{self.id}: {self.status}'
