@@ -13,3 +13,9 @@ class CreateVPSSerializer(serializers.ModelSerializer):
     class Meta:
         model = VPS
         fields = ["cpu", "ram", "hdd"]
+
+
+class UpdateVPSSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = VPS
+        fields = ["status"]
