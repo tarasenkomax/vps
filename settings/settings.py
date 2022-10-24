@@ -28,11 +28,11 @@ INSTALLED_APPS = [
 
     # my_apps
     'object_vps',
-    'drf_yasg',
-    'django_filters',
 
     # 3rd party
     'rest_framework',
+    'drf_yasg',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
